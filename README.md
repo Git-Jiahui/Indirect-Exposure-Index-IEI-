@@ -6,6 +6,7 @@ This repository contains R scripts for an academic research project on diaspora 
 
 How to Use
 1.	Download raw data
+   
   •	World Bank Global Bilateral Migration Database
   https://databank.worldbank.org/source/global-bilateral-migration
 
@@ -18,6 +19,7 @@ How to Use
   ! Data files are not uploaded due to licensing. Please download them manually from the official       sources and place them into local folders before running the scripts.
 
 2.	Create folder structure
+   
   On your computer (e.g., Desktop), prepare the following folders:
 
   Data Collection/                             #Main Data File
