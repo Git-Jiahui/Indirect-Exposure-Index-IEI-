@@ -22,15 +22,17 @@ https://gain.nd.edu
    
 On your computer (e.g., Desktop), prepare the following folders:
 
-Data Collection/                             #Main Data File
+```
+Data Collection/                             # Main Data File
 ├── World Bank Global Bilateral Migration/   # put World Bank Dataset
 │     └── P_Data_Extract_From_Global_Bilateral_Migration.xlsx
 ├── UN International Migrants Stock/         # put UNPN Dataset
 │     └── undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
 ├── ND-GAIN/                                 # put ND-GAIN Vulnerability Sub-index Dataset
 │     └── vulnerability.csv
-├──Dissertation Result/                         # put calculation result
-│      └── Figures and Tables/                      # put figures and tables in dissertation
+├──Dissertation Result/                      # put calculation result
+│      └── Figures and Tables/               # put figures and tables in dissertation
+```
 
 Acknowledgements
 I would like to thank my supervisor Dr Moritz Marbach for his guidance during this project.
