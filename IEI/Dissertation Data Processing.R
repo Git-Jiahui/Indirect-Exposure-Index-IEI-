@@ -2919,13 +2919,23 @@ write_xlsx(table_ndgain_wb,
            "~/Desktop/Data Collection/Dissertation Result/Figures and Tables/AppendixVI_NDGAIN_Mapping_WorldBank.xlsx")
 
 #Appendix VII
-table_ndgain_unpd <- vulnerability_mapping %>%
+vulnerability_mapping1 <- tribble(
+  ~missing_code, ~map_to_code, ~entity_name, ~sovereign, ~reason, ~map_type,
+  "SSD", "SDN", "South Sudan", "Sudan", "Belonged to Sudan before 2011", "Sovereign State",
+  "ESH", "MAR", "Western Sahara", "Morocco", "actual controller", "Sovereign State",
+  "CUW", "NLD", "Curaçao", "Netherlands", "Constituent countries of the Netherlands", "Sovereign State",
+  "BES", "NLD", "Bonaire, Sint Eustatius and Saba", "Netherlands", "Special Municipality of the Netherlands", "Sovereign State",
+  "SXM", "NLD", "Sint Maarten", "Netherlands", "Constituent countries of the Netherlands", "Sovereign State",
+  "VAT", "ITA", "Holy See", "Italy", "Near Italy", "Geographic Proximity"
+)
+
+table_ndgain_unpd <- vulnerability_mapping1 %>%
   mutate(
     `Territory Code` = missing_code,
     `Territory Name` = entity_name,
     `Mapped to Code` = map_to_code,
     `Mapped to Country` = sovereign,
-    `Mapping Type` = "Sovereign State",
+    `Mapping Type` = map_type,
     Reason = reason
   ) %>%
   select(`Territory Code`, `Territory Name`, `Mapped to Code`, 
